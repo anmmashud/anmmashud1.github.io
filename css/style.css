@@ -52,8 +52,11 @@ body {
     color: var(--text-color);
     font-weight: 500;
     transition: .3s;
+    margin: 0.5rem; /* Add horizontal spacing between items */
 }
 
-.navbar a:hover {
+
+.navbar a:hover,
+.navbar a.active {
     color: var(--main-color);
 }
