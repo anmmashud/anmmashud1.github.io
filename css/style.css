@@ -36,9 +36,8 @@ body {
     left: 0;
     width: 100%;
     padding: 1rem 5%;
-    background: rgba(0, 0, 0, 0.2); /* Semi-transparent black background */    display: flex;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */    display: flex;
     backdrop-filter: blur(10px); /* Add the blur effect */
-    color: white; /* Ensure text remains readable on a dark background */
     justify-content: space-between;
     align-items: center;
     z-index: 100;
