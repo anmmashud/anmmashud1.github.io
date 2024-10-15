@@ -37,7 +37,7 @@ body {
     width: 100%;
     padding: 1rem 5%;
     background: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */    display: flex;
-    backdrop-filter: blur(10px); /* Add the blur effect */
+    backdrop-filter: blur(50px); /* Add the blur effect */
     justify-content: space-between;
     align-items: center;
     z-index: 100;
