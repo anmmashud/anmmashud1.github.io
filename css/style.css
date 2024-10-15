@@ -26,6 +26,8 @@ html {
 body {
     background: var(--bg-color);
     color: var(--text-color);
+    font-size: 150%;
+    
 }
 
 .header {
