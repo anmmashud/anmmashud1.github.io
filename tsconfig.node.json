@@ -1,3 +1,13 @@
+// {
+//   "compilerOptions": {
+//     "composite": true,
+//     "skipLibCheck": true,
+//     "module": "ESNext",
+//     "moduleResolution": "bundler",
+//     "allowSyntheticDefaultImports": true
+//   },
+//   "include": ["gitprofile.config.ts.bak", "vite.config.ts"]
+// }
 {
   "compilerOptions": {
     "composite": true,
@@ -6,5 +16,7 @@
     "moduleResolution": "bundler",
     "allowSyntheticDefaultImports": true
   },
-  "include": ["gitprofile.config.ts.bak", "vite.config.ts"]
+  "include": [
+    "**/*.ts"                     // Matches all TypeScript files in the project
+  ]
 }
