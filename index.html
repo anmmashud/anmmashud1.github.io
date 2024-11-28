@@ -1,185 +1,670 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA Compatible" content="IE=edge">
-    
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>A N M Mashud</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A N M Mashud - Data analyst from Bangladesh</title>
 
-    <link rel="stylesheet" href="/style.css"> 
-    <script src="/js/script.js"></script>
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
 
-    <!-- box icons -->
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
 
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Barlow:wght@600;700&family=Open+Sans:wght@400;500;700&family=Poppins:wght@400;600&display=swap"
+    rel="stylesheet">
 </head>
 
-<body>
+<body id="top">
 
-    <!-- header design -->
+  <!-- 
+    - #HEADER
+  -->
 
-    <header class="header">
-        <a href="#" class="logo">anmmashud.</a>
+  <header class="header" data-header>
+    <div class="container">
 
-        <div class="bx bx-menu" id="menu-icon"></div>
+      <a href="#">
+        <h1 class="logo">anmmashud.</h1>
+      </a>
 
-        <nav class="navbar">
-            <a href="#home" class="active">Home</a>
-            <a href="#about">About</a>
-            <a href="#education">Education</a>
-            <a href="#skills">Skills</a>
-            <a href="#contact">Contact</a>
-            <a href="portfolio">Portfolio</a>
+      <button class="nav-toggle-btn" aria-label="Toggle Menu" data-nav-toggle-btn>
+        <ion-icon name="menu-outline" class="menu-icon"></ion-icon>
+        <ion-icon name="close-outline" class="close-icon"></ion-icon>
+      </button>
 
-        </nav>
-    </header>
+      <nav class="navbar container">
+        <ul class="navbar-list">
 
-    <!-- home section design -->
+          <li>
+            <a href="#home" class="navbar-link" data-nav-link>Home</a>
+          </li>
 
-    <section class="home" id="home">
-        <div class="home-content">
-            <h1>Hi, I'm <span>Mashud</span></h1>
-            <div class="text-animate">
-                <h3>Data Scientist</h3>
+          <li>
+            <a href="#about" class="navbar-link" data-nav-link>About</a>
+          </li>
+
+          <li>
+            <a href="#portfolio" class="navbar-link" data-nav-link>Portfolio</a>
+          </li>
+
+          <li>
+            <a href="#skills" class="navbar-link" data-nav-link>Skills</a>
+          </li>
+
+          <li>
+            <a href="#contact" class="navbar-link" data-nav-link>Contact</a>
+          </li>
+
+          <li>
+            <a href="#blog" class="navbar-link" data-nav-link>Blog</a>
+          </li>
+
+          <li>
+            <a href="#" class="btn btn-primary">Download CV</a>
+          </li>
+
+        </ul>
+      </nav>
+
+    </div>
+  </header>
+
+
+
+
+
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="hero" id="home">
+        <div class="container">
+
+          <div class="hero-banner">
+
+            <img src="./assets/images/hero-banner.jpg" width="800" height="864" loading="lazy" alt="Ethan's Photo"
+              class="img-cover">
+
+            <div class="elem elem-1">
+              <p class="elem-title">12</p>
+
+              <p class="elem-text">Years of Success</p>
             </div>
-            <p>Personal portfolio website showcasing my journey. Exploring data science, coding in Python, Machine Learning and statistical analysis. Will include projects, academic achievements, and future work experiences.</p>
+
+            <div class="elem elem-2">
+              <p class="elem-title">800+</p>
+
+              <p class="elem-text">Projects Completed</p>
+            </div>
+
+            <div class="elem elem-3">
+              <ion-icon name="trophy"></ion-icon>
+            </div>
+
+            <img src="./assets/images/rotate-img.png" width="169" height="172" alt="I'm developer from New York"
+              class="rotate-img">
+
+          </div>
+
+          <div class="hero-content">
+
+            <h2 class="hero-title">
+              <span>Hello I'm</span>
+              <strong>A N M Mashud</strong> Data Analyst from Bangladesh
+            </h2>
+
+            <p class="hero-text">
+              Adipisicing elit. Neque nulla voluptatum eos repellat deserunt nesciunt tempore porro totam.
+            </p>
+
+            <div class="btn-group">
+              <a href="https://github.com/anmmashud" class="btn btn-primary blue">GitHub</a>
+              <a href="#blog" class="btn btn-primary blue">Blog</a>
+
+              <a href="#about" class="btn">About Me</a>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #ABOUT
+      -->
+
+      <section class="section about" id="about">
+        <div class="container">
+
+          <figure class="about-banner">
+
+            <img src="./assets/images/about-banner.jpg" width="800" height="652" loading="lazy" alt="Ethan's Photo"
+              class="img-cover">
+
+            <img src="./assets/images/absolute-image.jpg" width="800" height="717" loading="lazy" alt="Ethan's Photo"
+              class="abs-img">
+
+            <div class="abs-icon abs-icon-1">
+              <ion-icon name="logo-css3"></ion-icon>
+            </div>
+
+            <div class="abs-icon abs-icon-2">
+              <ion-icon name="logo-javascript"></ion-icon>
+            </div>
+
+            <div class="abs-icon abs-icon-3">
+              <ion-icon name="logo-angular"></ion-icon>
+            </div>
+
+          </figure>
+
+          <div class="about-content">
+
+            <p class="section-subtitle">I'm a Data Analyst</p>
+
+            <h2 class="h2 section-title">I Develop Application that Help People</h2>
+
+            <p class="section-text">
+              Dliquip ex ea commo do conse namber onequa ute irure dolor in reprehenderit in voluptate velit esse cillum
+              dolore eu
+              fugiat nulla pariatu epteur sint occaecat cupidatat
+            </p>
+
+            <p class="section-text">
+              Krnon proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde
+              omnis
+            </p>
+
+            <a href="#portfolio" class="btn btn-primary blue">View Portfolio</a>
+
+          </div>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #PORTFOLIO
+      -->
+
+      <section class="section portfolio" id="portfolio">
+        <div class="container">
+
+          <p class="section-subtitle">Portfolio</p>
+
+          <h2 class="h2 section-title">My Amazing Works</h2>
+
+          <p class="section-text">
+            Dliquip ex ea commo do conse namber onequa ute irure dolor in reprehen derit in voluptate
+          </p>
+
+          <ul class="portfolio-list">
+
+            <li>
+              <a href="#" class="portfolio-card" style="background-image: url('./assets/images/portfolio-1.jpg')">
+                <div class="card-content">
+
+                  <p class="card-subtitle">Youtube</p>
+
+                  <h3 class="h3 card-title">Web Application for Desiverse</h3>
+
+                  <span class="btn-link">
+                    <span>View Project</span>
+
+                    <ion-icon name="arrow-forward"></ion-icon>
+                  </span>
+
+                </div>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="portfolio-card" style="background-image: url('./assets/images/portfolio-2.jpg')">
+                <div class="card-content">
+
+                  <p class="card-subtitle">Vimeo</p>
+
+                  <h3 class="h3 card-title">Web Application for Desiverse</h3>
+
+                  <span class="btn-link">
+                    <span>View Project</span>
+
+                    <ion-icon name="arrow-forward"></ion-icon>
+                  </span>
+
+                </div>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="portfolio-card" style="background-image: url('./assets/images/portfolio-3.jpg')">
+                <div class="card-content">
+
+                  <p class="card-subtitle">Soundcloud</p>
+
+                  <h3 class="h3 card-title">Web Application for Desiverse</h3>
+
+                  <span class="btn-link">
+                    <span>View Project</span>
+
+                    <ion-icon name="arrow-forward"></ion-icon>
+                  </span>
+
+                </div>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="portfolio-card" style="background-image: url('./assets/images/portfolio-4.jpg')">
+                <div class="card-content">
+
+                  <p class="card-subtitle">Details</p>
+
+                  <h3 class="h3 card-title">Web Application for Desiverse</h3>
+
+                  <span class="btn-link">
+                    <span>View Project</span>
+
+                    <ion-icon name="arrow-forward"></ion-icon>
+                  </span>
+
+                </div>
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #SKILLS
+      -->
+
+      <section class="section skills" id="skills">
+        <div class="container">
+
+          <p class="section-subtitle">My Skills</p>
+
+          <h2 class="h2 section-title">I Develop Skills Regularly</h2>
+
+          <p class="section-text">
+            Dliquip ex ea commo do conse namber onequa ute irure dolor in reprehen derit in voluptate
+          </p>
+
+          <ul class="skills-list">
+
+            <!-- only change the value for each skill: width: --%, value="--">--%</data> -->
+          
+            <!-- skill 1 -->
+
+            <li class="skills-item">
+              <div class="wrapper" style="width: 60%">
+                <h3 class=" skills-title">Excel</h3>
+
+                <data class="skills-data" value="60">60%</data>
+              </div>
+
+              <div class="skills-progress-box">
+                <div class="skills-progress" style="width: 60%"></div>
+              </div>
+            </li>
             
-            <div class="btn-box">
-                <a href="#" class="btn">Portfolio</a>
-                <a href="#" class="btn">Let's Talk</a>
+            <!-- skill 2 -->
+
+            <li class="skills-item">
+              <div class="wrapper" style="width: 100%">
+                <h3 class="skills-title">MySQL</h3>
+
+                <data class="skills-data" value="75">Learning</data>
+              </div>
+
+              <div class="skills-progress-box">
+                <div class="skills-progress" style="width: 0%"></div>
+              </div>
+            </li>
+            
+            <!-- skill 3 -->
+
+            <li class="skills-item">
+              <div class="wrapper" style="width: 50%">
+                <h3 class="skills-title">Pandas</h3>
+
+                <data class="skills-data" value="90">40%</data>
+              </div>
+
+              <div class="skills-progress-box">
+                <div class="skills-progress" style="width: 40%"></div>
+              </div>
+            </li>
+
+            <!-- skill 4 -->
+
+            <li class="skills-item">
+              <div class="wrapper" style="width: 100%">
+                <h3 class="skills-title">NumPy</h3>
+
+                <data class="skills-data" value="70">00%</data>
+              </div>
+
+              <div class="skills-progress-box">
+                <div class="skills-progress" style="width: 0%"></div>
+              </div>
+            </li>
+
+            <!-- skill 5 -->
+
+            <li class="skills-item">
+              <div class="wrapper" style="width: 60%">
+                <h3 class="skills-title">Python</h3>
+
+                <data class="skills-data" value="60">60%</data>
+              </div>
+
+              <div class="skills-progress-box">
+                <div class="skills-progress" style="width: 60%"></div>
+              </div>
+            </li>
+
+            <!-- skill 6 -->
+
+            <li class="skills-item">
+              <div class="wrapper" style="width: 50%">
+                <h3 class="skills-title">HTML </h3>
+
+                <data class="skills-data" value="75">40%</data>
+              </div>
+
+              <div class="skills-progress-box">
+                <div class="skills-progress" style="width: 40%"></div>
+              </div>
+            </li>
+
+            <!-- skill  -->
+
+            <li class="skills-item">
+              <div class="wrapper" style="width: 100%">
+                <h3 class="skills-title">CSS</h3>
+
+                <data class="skills-data" value="75">00%</data>
+              </div>
+
+              <div class="skills-progress-box">
+                <div class="skills-progress" style="width: 0%"></div>
+              </div>
+            </li>
+
+            <!-- skill  -->
+
+            <li class="skills-item">
+              <div class="wrapper" style="width: 100%">
+                <h3 class="skills-title">Java</h3>
+
+                <data class="skills-data" value="75">00%</data>
+              </div>
+
+              <div class="skills-progress-box">
+                <div class="skills-progress" style="width: 00%"></div>
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #CONTACT
+      -->
+
+      <section class="section contact" id="contact">
+        <div class="container">
+
+          <div class="contact-card">
+
+            <p class="card-subtitle">Don't be shy</p>
+
+            <h2 class="h2 section-title">Drop Me a Line</h2>
+
+            <div class="wrapper">
+
+              <form action="" class="contact-form">
+
+                <input type="text" name="name" placeholder="Name" required class="contact-input">
+
+                <input type="email" name="email" placeholder="Email" required class="contact-input">
+
+                <textarea name="message" placeholder="Message" required class="contact-input"></textarea>
+
+                <button type="submit" class="btn-submit">Submit Message</button>
+
+              </form>
+
+              <ul class="contact-list">
+
+                <li class="contact-item">
+
+                  <div class="contact-icon">
+                    <ion-icon name="location"></ion-icon>
+                  </div>
+
+                  <div>
+                    <h3 class="contact-item-title">Address</h3>
+
+                    <address class="contact-item-link">
+                      Chawk Bazar, Chittagong, Bangladesh
+                    </address>
+                  </div>
+
+                </li>
+
+                <li class="contact-item">
+
+                  <div class="contact-icon">
+                    <ion-icon name="mail"></ion-icon>
+                  </div>
+
+                  <div>
+                    <h3 class="contact-item-title">Email</h3>
+
+                    <a href="mailto:hello@ethan.com" class="contact-item-link">anmmashud123@gmail.com</a>
+                  </div>
+
+                </li>
+
+                <li class="contact-item">
+
+                  <div class="contact-icon">
+                    <ion-icon name="call"></ion-icon>
+                  </div>
+
+                  <div>
+                    <h3 class="contact-item-title">Phone</h3>
+
+                    <a href="tel:+1234567890" class="contact-item-link">+8801746823075</a>
+                  </div>
+
+                </li>
+
+              </ul>
+
             </div>
-        </div>
-        
-        <div class="home-sci">
-            <a href="#"><i class='bx bxl-linkedin' ></i></a>
-            <a href="#"><i class='bx bxl-github' ></i></a>
-            <a href="#"><i class='bx bxl-facebook'></i></a>
-            <a href="#"><i class='bx bxl-telegram' ></i></a>
-            <!-- <a href="#"><i class='bx bxl-instagram-alt' ></i></a>
-            <a href="#"><i class='bx bxl-twitter' ></i></a> -->   
-        </div>
 
-        <div class="home-imageHover"></div>
-
-    </section>
-
-    <!-- about section  -->
-
-    <section class="about" id="about">
-        <h2 class="heading">About <span>Me</span></h2>
-
-        <div class="about-img">
-            <img src="images/about.png" alt="">
-            <span class="circle-spin"></span>
-        </div>
-
-        <div class="about-content">
-            <h3>Data Scientist</h3>
-            <p>Personal portfolio website showcasing my journey. Exploring data science, coding in Python, Machine Learning and statistical analysis. Will include projects, academic achievements, and future work experiences.</p>
-
-            <div class="btn-box btns">
-                <a href="#" class="btn">Read More</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Education section design -->
-
-    <section class="education" id="education">
-        <h2 class="headig">My <span>Journey</span></h2>
-
-        <div class="education-row">
-            <div class="education-column">
-                <h3 class="title">Education</h3>
-
-                <div class="education-box">
-<!-- educaton content bsc  -->
-                    <div class="education-content">
-                        <div class="content">
-                            <div class="year"><i class='bx bx-calendar'></i>2023 - 2024 </div>
-                            <h3>BSc in Statistics - Chittagong College, Chittagong</h3>
-                            <p>I am studying Bachelor Of Science (B.Sc.) Honour's in Department of Statistics at Chittagong College, Chittagong.</p>
-                        </div>
-                    </div>                   
-<!-- educaton content hsc  -->
-                    <div class="education-content">
-                        <div class="content">
-                            <div class="year"><i class='bx bx-calendar'></i>2021 - 2022 </div>
-                            <h3>HSC - Lakshmipur Govt. College, Lakshmipur</h3>
-                            <p>I compleated my Higher School Certificate examination in 2023 at Lakshmipur Govt. College, Lakshmipur and I obtained GPA-5.00 from Science.</p>
-                        </div>
-                    </div>
-<!-- educaton content ssc  -->
-                    <div class="education-content">
-                        <div class="content">
-                            <div class="year"><i class='bx bx-calendar'></i>2019 - 2020</div>
-                            <h3>SSC - Lakshmipur Adarsha Samad Govt. High School, Lakshmipur</h3>
-                            <p>I compleated my SEcomdery School Certificate examination in 2021 from Lakshmipur Adarsha Samad Govt. High School and I obtained GPA-5.00 from Science.</p>
-                        </div>
-                    </div>
-<!-- educaton content psc  -->
-                    <div class="education-content">
-                        <div class="content">
-                            <div class="year"><i class='bx bx-calendar'></i>2015</div>
-                            <h3>PSC - Kakoli Shishu Angan, Lakshmipur</h3>
-                            <p>I compleated my Primary School Certificate examination in 2015 from Kakoli Shishu Angan, Lakshmipur and I obtained GPA-5.00</p>
-                        </div>
-                    </div>
-<!-- educaton content end  -->
-                </div>
-            </div>
-
-<!-- experiences will add here  -->
-
-            <div class="education-column">
-                <h3 class="title">Experience</h3>
-
-                <div class="education-box">
-<!-- educaton content bsc  -->
-                    <div class="education-content">
-                        <div class="content">
-                            <div class="year"><i class='bx bx-calendar'></i>2025</div>
-                            <h3>Job Role/title - Company</h3>
-                            <p>Information about my job role and my experiences.</p>
-                        </div>
-                    </div>                   
-<!-- educaton content hsc  -->
-                    <div class="education-content">
-                        <div class="content">
-                            <div class="year"><i class='bx bx-calendar'></i>2025</div>
-                            <h3>Job Role/title - Company</h3>
-                            <p>Information about my job role and my experiences.</p>
-                        </div>
-                    </div>
-<!-- educaton content ssc  -->
-                    <div class="education-content">
-                        <div class="content">
-                            <div class="year"><i class='bx bx-calendar'></i>2025</div>
-                            <h3>Job Role/title - Company</h3>
-                            <p>Information about my job role and my experiences.</p>
-                        </div>
-                    </div>
-<!-- educaton content psc  -->
-                    <div class="education-content">
-                        <div class="content">
-                            <div class="year"><i class='bx bx-calendar'></i>2025</div>
-                            <h3>Job Role/title - Company</h3>
-                            <p>Information about my job role and my experiences.</p>
-                        </div>
-                    </div>
-<!-- educaton content end  -->
-                </div>
-            </div>
+          </div>
 
         </div>
-    </section>
+      </section>
 
-    <!-- this is the footer -->
-    
-    <footer>
-        <p>© 2024 Mashud. All rights reserved.</p>
-    </footer>
+
+
+
+
+      <!-- 
+        - #BLOG
+      -->
+
+      <section class="section blog" id="blog">
+        <div class="container">
+
+          <p class="section-subtitle">Latest News</p>
+
+          <h2 class="h2 section-title">Checkout My Recent Blogs</h2>
+
+          <p class="section-text">
+            Dliquip ex ea commo do conse namber onequa ute irure dolor in reprehen derit in voluptate
+          </p>
+
+          <ul class="blog-list">
+
+            <li>
+              <div class="blog-card">
+
+                <figure class="card-banner">
+                  <a href="#">
+                    <img src="./assets/images/blog-1.jpg" width="1181" height="843" loading="lazy"
+                      alt="Jim Morisson Says when the musics over turn off the light" class="img-cover">
+                  </a>
+                </figure>
+
+                <a href="#" class="card-tag">Web Development</a>
+
+                <h3 class="card-title">
+                  <a href="#">Jim Morisson Says when the musics over turn off the light</a>
+                </h3>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="blog-card">
+
+                <figure class="card-banner">
+                  <a href="#">
+                    <img src="./assets/images/blog-2.jpg" width="1181" height="843" loading="lazy"
+                      alt="Jim Morisson Says when the musics over turn off the light" class="img-cover">
+                  </a>
+                </figure>
+
+                <a href="#" class="card-tag">Web Development</a>
+
+                <h3 class="card-title">
+                  <a href="#">Jim Morisson Says when the musics over turn off the light</a>
+                </h3>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="blog-card">
+
+                <figure class="card-banner">
+                  <a href="#">
+                    <img src="./assets/images/blog-3.jpg" width="1181" height="843" loading="lazy"
+                      alt="Jim Morisson Says when the musics over turn off the light" class="img-cover">
+                  </a>
+                </figure>
+
+                <a href="#" class="card-tag">Web Development</a>
+
+                <h3 class="card-title">
+                  <a href="#">Jim Morisson Says when the musics over turn off the light</a>
+                </h3>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+    </article>
+  </main>
+
+
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+    <div class="container">
+
+      <p class="copyright">
+        &copy; 2025 <a href="#" class="copyright-link">anmmashud</a> | All Rights Reseverd
+      </p>
+
+      <ul class="footer-list">
+        <li>
+          <a href="#" class="footer-link">Terms & Condition</a>
+        </li>
+
+        <li>
+          <a href="#" class="footer-link">Privacy Policy</a>
+        </li>
+      </ul>
+
+    </div>
+  </footer>
+
+
+
+
+
+  <!-- 
+    - #BACK TO TOP
+  -->
+
+  <a href="#top" class="back-to-top" data-back-to-top>BACK TOP</a>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
 </body>
+
 </html>
