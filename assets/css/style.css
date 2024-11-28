@@ -2,11 +2,6 @@
   #style.css
 \*-----------------------------------*/
 
-/**
- * copyright 2022 codewithsadee
- */
-
-
 
 
 
@@ -291,7 +286,7 @@ body {
 
 .navbar .btn {
   background-color: var(--orange-soda);
-  margin-block-start: 15px;
+  margin-block-start: 5px;
 }
 
 
