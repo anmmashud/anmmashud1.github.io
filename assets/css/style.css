@@ -623,11 +623,14 @@ textarea.contact-input {
   #FOOTER
 \*-----------------------------------*/
 
+/* Footer Styling */
 .footer {
-  background-color: var(--independence);
-  padding-block: 60px;
+  background-color: var(--midnight-blue);  /* Same background as existing */
+  padding-block: 20px;
+  text-align: center;  /* Center the content */
 }
 
+/* Copyright Styling */
 .copyright {
   max-width: max-content;
   margin-inline: auto;
@@ -640,20 +643,68 @@ textarea.contact-input {
   font-weight: var(--fw-600);
 }
 
-.copyright-link:is(:hover, :focus) { color: var(--white); }
+.copyright-link:is(:hover, :focus) { 
+  color: var(--white); 
+}
 
+/* Footer List Styling */
 .footer-list {
   max-width: max-content;
   margin-inline: auto;
+  padding: 0;
+  margin-bottom: 10px;
 }
 
-.footer-list * { display: inline-block; }
+.footer-list * {
+  display: inline-block;
+}
 
-.footer-list > li:not(:last-child) { margin-inline-end: 40px; }
+.footer-list > li:not(:last-child) {
+  margin-inline-end: 40px;
+}
 
-.footer-link { transition: var(--transition-2); }
+.footer-link {
+  transition: var(--transition-2);
+}
 
-.footer-link:is(:hover, :focus) { color: var(--white); }
+.footer-link:is(:hover, :focus) {
+  color: var(--white);
+}
+
+/* Social Media Links Styling */
+.footer-social-links {
+  list-style-type: none;
+  margin: 20px 0;
+  padding: 0;
+}
+
+.footer-social-links li {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+.footer-social-link {
+  font-size: 24px;  /* Adjust size of icons */
+  color: var(--white);  /* Default color */
+  transition: var(--transition-2);
+  text-decoration: none;
+}
+
+/* Hover Effect on Social Media Icons */
+.footer-social-link:hover {
+  color: var(--orange);  /* Or any color you prefer */
+  transform: scale(1.1);  /* Slight zoom effect */
+}
+
+/* Optional: Add a transition effect */
+.footer-social-link i {
+  transition: transform 0.3s ease;
+}
+
+.footer-social-link:hover i {
+  transform: scale(1.1);
+}
+
 
 
 
