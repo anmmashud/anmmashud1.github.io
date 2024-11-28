@@ -671,16 +671,17 @@ textarea.contact-input {
   color: var(--white);
 }
 
-/* Social Media Links Styling */
+/* Social Media Links Styling (Updated with Flexbox) */
 .footer-social-links {
+  display: flex;  /* Use Flexbox for row layout */
+  justify-content: center;  /* Center the items horizontally */
   list-style-type: none;
   margin: 20px 0;
   padding: 0;
 }
 
 .footer-social-links li {
-  display: inline-block;
-  margin: 0 15px;
+  margin: 0 15px;  /* Space between icons */
 }
 
 .footer-social-link {
